@@ -1,0 +1,56 @@
+general.import = [
+  "/Users/robertwilliamson/.nvm/versions/node/v21.7.1/lib/node_modules/alacritty-themes/themes/Catppuccin-Mocha.toml"
+]
+
+[font]
+size = 15
+
+[font.normal]
+family = "DejaVuSansM Nerd Font Mono"
+# style = "Regular"
+
+[font.bold]
+family = "DejaVuSansM Nerd Font Mono"
+# style = "Bold"
+
+[font.italic]
+family = "DejaVuSansM Nerd Font Mono"
+# style = "Italic"
+
+# [font.normal]
+# family = "UbuntuMono Nerd Font"
+# family = "Source Code Pro"
+# family = "MesloLGS NF"
+
+[keyboard]
+bindings = [
+  { key = "F",     mods = "Alt", action = "ToggleSimpleFullscreen" },
+  { key = "Q",     mods = "Command",  action = "None" },
+  # Bindings below allow word skipping with "Alt + Arrow" in tmux,
+  # but interfere with pane resizing using Alt. Instead, use Ctrl + Arrow
+  # to resize panes (this alternative is available by default).
+  { key = "Right",  mods = "Alt", chars = "\u001BF" },
+  { key = "Left",   mods = "Alt", chars = "\u001BB" },
+
+]
+
+[window]
+# startup_mode = "SimpleFullscreen"
+option_as_alt = "Both" # "OnlyLeft" | "OnlyRight" | "Both" | "None" # (macos only)
+
+
+[window.padding]
+x = 5
+y = 0
+
+[window.dimensions]
+columns = 250
+lines = 90
+
+[window.position]
+x = 800
+y = 150
+
+# themes:
+# - https://github.com/alacritty/alacritty-theme
+
