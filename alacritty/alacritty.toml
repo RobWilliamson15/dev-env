@@ -25,7 +25,7 @@ bindings = [
 ]
 
 [window]
-opacity = 0.25
+opacity = 0.6
 decorations = "Buttonless"
 dynamic_padding = true
 
