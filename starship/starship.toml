@@ -1,26 +1,40 @@
-[battery]
-full_symbol = '🔋 '
-charging_symbol = '⚡️ '
-discharging_symbol = '💀 '
+# A minimal left prompt
+format = """$directory$character"""
+palette = "catppuccin_mocha"
+
+right_format = """$all"""
+command_timeout = 1000
 
 [character]
-success_symbol = '[➜](bold green) '
+vicmd_symbol = "[N] >>>"
+success_symbol = '[➜](bold blue)'
 error_symbol = '[✗](bold red) '
 
-[container]
-format = '[$symbol \[$name\]]($style) '
-
-[directory]
-truncation_length = 8
-truncation_symbol = '…/'
-
-[docker_context]
-format = 'via [🐋 $context](blue bold)'
-
 [git_branch]
+format =  '[$symbol$branch(:$remote_branch)]($style)'
 symbol = '🌱'
 truncation_length = 4
 truncation_symbol = ''
+
+[battery]
+format = "[$symbol$percentage]($style) "
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+empty_symbol = "💀"
+unknown_symbol = "❓"
+[[battery.display]]
+threshold = 50
+style = "bold red"
+[[battery.display]]
+threshold = 100
+style = "white"
+
+[directory]
+truncation_length = 8
+
+[docker_context]
+format = 'via [🐋 $context](blue bold)'
 
 [git_commit]
 commit_hash_length = 4
@@ -172,3 +186,31 @@ format = 'via [$symbol]($style)'
 
 [zig]
 format = 'via [$symbol]($style)'
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
