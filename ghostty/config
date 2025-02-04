@@ -1,0 +1,14 @@
+theme = catppuccin-mocha
+shell-integration = zsh
+
+window-decoration = false
+window-theme = dark
+
+mouse-hide-while-typing = true
+copy-on-select = true
+
+background-opacity = 0.8
+
+font-family = DejaVuSansM
+font-size = 26
+cursor-style = block
